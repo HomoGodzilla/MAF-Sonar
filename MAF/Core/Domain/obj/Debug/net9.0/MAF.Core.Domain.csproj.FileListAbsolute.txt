@@ -46,3 +46,15 @@ C:\UFSJ\trabalho-pr-tico-maf\MAF\Core\Domain\obj\Debug\net9.0\MAF.Core.Domain.dl
 C:\UFSJ\trabalho-pr-tico-maf\MAF\Core\Domain\obj\Debug\net9.0\refint\MAF.Core.Domain.dll
 C:\UFSJ\trabalho-pr-tico-maf\MAF\Core\Domain\obj\Debug\net9.0\MAF.Core.Domain.pdb
 C:\UFSJ\trabalho-pr-tico-maf\MAF\Core\Domain\obj\Debug\net9.0\ref\MAF.Core.Domain.dll
+C:\UFSJ\MAF-Sonar\MAF\Core\Domain\bin\Debug\net9.0\MAF.Core.Domain.deps.json
+C:\UFSJ\MAF-Sonar\MAF\Core\Domain\bin\Debug\net9.0\MAF.Core.Domain.dll
+C:\UFSJ\MAF-Sonar\MAF\Core\Domain\bin\Debug\net9.0\MAF.Core.Domain.pdb
+C:\UFSJ\MAF-Sonar\MAF\Core\Domain\obj\Debug\net9.0\MAF.Core.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\UFSJ\MAF-Sonar\MAF\Core\Domain\obj\Debug\net9.0\MAF.Core.Domain.AssemblyInfoInputs.cache
+C:\UFSJ\MAF-Sonar\MAF\Core\Domain\obj\Debug\net9.0\MAF.Core.Domain.AssemblyInfo.cs
+C:\UFSJ\MAF-Sonar\MAF\Core\Domain\obj\Debug\net9.0\MAF.Core.Domain.csproj.CoreCompileInputs.cache
+C:\UFSJ\MAF-Sonar\MAF\Core\Domain\obj\Debug\net9.0\MAF.Core.Domain.sourcelink.json
+C:\UFSJ\MAF-Sonar\MAF\Core\Domain\obj\Debug\net9.0\MAF.Core.Domain.dll
+C:\UFSJ\MAF-Sonar\MAF\Core\Domain\obj\Debug\net9.0\refint\MAF.Core.Domain.dll
+C:\UFSJ\MAF-Sonar\MAF\Core\Domain\obj\Debug\net9.0\MAF.Core.Domain.pdb
+C:\UFSJ\MAF-Sonar\MAF\Core\Domain\obj\Debug\net9.0\ref\MAF.Core.Domain.dll

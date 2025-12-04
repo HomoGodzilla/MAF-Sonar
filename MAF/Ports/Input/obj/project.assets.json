@@ -35,11 +35,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\UFSJ\\trabalho-pr-tico-maf\\MAF\\Ports\\Input\\MAF.Ports.Input.csproj",
+      "projectUniqueName": "C:\\UFSJ\\MAF-Sonar\\MAF\\Ports\\Input\\MAF.Ports.Input.csproj",
       "projectName": "MAF.Ports.Input",
-      "projectPath": "C:\\UFSJ\\trabalho-pr-tico-maf\\MAF\\Ports\\Input\\MAF.Ports.Input.csproj",
+      "projectPath": "C:\\UFSJ\\MAF-Sonar\\MAF\\Ports\\Input\\MAF.Ports.Input.csproj",
       "packagesPath": "C:\\Users\\minec\\.nuget\\packages\\",
-      "outputPath": "C:\\UFSJ\\trabalho-pr-tico-maf\\MAF\\Ports\\Input\\obj\\",
+      "outputPath": "C:\\UFSJ\\MAF-Sonar\\MAF\\Ports\\Input\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\minec\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -54,8 +54,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\UFSJ\\trabalho-pr-tico-maf\\MAF\\Core\\Domain\\MAF.Core.Domain.csproj": {
-              "projectPath": "C:\\UFSJ\\trabalho-pr-tico-maf\\MAF\\Core\\Domain\\MAF.Core.Domain.csproj"
+            "C:\\UFSJ\\MAF-Sonar\\MAF\\Core\\Domain\\MAF.Core.Domain.csproj": {
+              "projectPath": "C:\\UFSJ\\MAF-Sonar\\MAF\\Core\\Domain\\MAF.Core.Domain.csproj"
             }
           }
         }

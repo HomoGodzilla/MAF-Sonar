@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MAF.Adapters.Input.WebServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+17544991df0745ee38136e38c11d33af388269d1")]
 [assembly: System.Reflection.AssemblyProductAttribute("MAF.Adapters.Input.WebServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MAF.Adapters.Input.WebServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -2125,11 +2125,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\UFSJ\\trabalho-pr-tico-maf\\MAF\\Adapters\\Input\\WebServer\\MAF.Adapters.Input.WebServer.csproj",
+      "projectUniqueName": "C:\\UFSJ\\MAF-Sonar\\MAF\\Adapters\\Input\\WebServer\\MAF.Adapters.Input.WebServer.csproj",
       "projectName": "MAF.Adapters.Input.WebServer",
-      "projectPath": "C:\\UFSJ\\trabalho-pr-tico-maf\\MAF\\Adapters\\Input\\WebServer\\MAF.Adapters.Input.WebServer.csproj",
+      "projectPath": "C:\\UFSJ\\MAF-Sonar\\MAF\\Adapters\\Input\\WebServer\\MAF.Adapters.Input.WebServer.csproj",
       "packagesPath": "C:\\Users\\minec\\.nuget\\packages\\",
-      "outputPath": "C:\\UFSJ\\trabalho-pr-tico-maf\\MAF\\Adapters\\Input\\WebServer\\obj\\",
+      "outputPath": "C:\\UFSJ\\MAF-Sonar\\MAF\\Adapters\\Input\\WebServer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\minec\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -2144,17 +2144,17 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\UFSJ\\trabalho-pr-tico-maf\\MAF\\Adapters\\Output\\Firebase\\MAF.Adapters.Output.Firebase.csproj": {
-              "projectPath": "C:\\UFSJ\\trabalho-pr-tico-maf\\MAF\\Adapters\\Output\\Firebase\\MAF.Adapters.Output.Firebase.csproj"
+            "C:\\UFSJ\\MAF-Sonar\\MAF\\Adapters\\Output\\Firebase\\MAF.Adapters.Output.Firebase.csproj": {
+              "projectPath": "C:\\UFSJ\\MAF-Sonar\\MAF\\Adapters\\Output\\Firebase\\MAF.Adapters.Output.Firebase.csproj"
             },
-            "C:\\UFSJ\\trabalho-pr-tico-maf\\MAF\\Core\\Application\\MAF.Core.Application.csproj": {
-              "projectPath": "C:\\UFSJ\\trabalho-pr-tico-maf\\MAF\\Core\\Application\\MAF.Core.Application.csproj"
+            "C:\\UFSJ\\MAF-Sonar\\MAF\\Core\\Application\\MAF.Core.Application.csproj": {
+              "projectPath": "C:\\UFSJ\\MAF-Sonar\\MAF\\Core\\Application\\MAF.Core.Application.csproj"
             },
-            "C:\\UFSJ\\trabalho-pr-tico-maf\\MAF\\Ports\\Input\\MAF.Ports.Input.csproj": {
-              "projectPath": "C:\\UFSJ\\trabalho-pr-tico-maf\\MAF\\Ports\\Input\\MAF.Ports.Input.csproj"
+            "C:\\UFSJ\\MAF-Sonar\\MAF\\Ports\\Input\\MAF.Ports.Input.csproj": {
+              "projectPath": "C:\\UFSJ\\MAF-Sonar\\MAF\\Ports\\Input\\MAF.Ports.Input.csproj"
             },
-            "C:\\UFSJ\\trabalho-pr-tico-maf\\MAF\\Ports\\Output\\MAF.Ports.Output.csproj": {
-              "projectPath": "C:\\UFSJ\\trabalho-pr-tico-maf\\MAF\\Ports\\Output\\MAF.Ports.Output.csproj"
+            "C:\\UFSJ\\MAF-Sonar\\MAF\\Ports\\Output\\MAF.Ports.Output.csproj": {
+              "projectPath": "C:\\UFSJ\\MAF-Sonar\\MAF\\Ports\\Output\\MAF.Ports.Output.csproj"
             }
           }
         }

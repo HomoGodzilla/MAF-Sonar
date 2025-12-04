@@ -1292,11 +1292,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\UFSJ\\trabalho-pr-tico-maf\\MAF\\Adapters\\Output\\Firebase\\MAF.Adapters.Output.Firebase.csproj",
+      "projectUniqueName": "C:\\UFSJ\\MAF-Sonar\\MAF\\Adapters\\Output\\Firebase\\MAF.Adapters.Output.Firebase.csproj",
       "projectName": "MAF.Adapters.Output.Firebase",
-      "projectPath": "C:\\UFSJ\\trabalho-pr-tico-maf\\MAF\\Adapters\\Output\\Firebase\\MAF.Adapters.Output.Firebase.csproj",
+      "projectPath": "C:\\UFSJ\\MAF-Sonar\\MAF\\Adapters\\Output\\Firebase\\MAF.Adapters.Output.Firebase.csproj",
       "packagesPath": "C:\\Users\\minec\\.nuget\\packages\\",
-      "outputPath": "C:\\UFSJ\\trabalho-pr-tico-maf\\MAF\\Adapters\\Output\\Firebase\\obj\\",
+      "outputPath": "C:\\UFSJ\\MAF-Sonar\\MAF\\Adapters\\Output\\Firebase\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\minec\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1311,8 +1311,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\UFSJ\\trabalho-pr-tico-maf\\MAF\\Ports\\Output\\MAF.Ports.Output.csproj": {
-              "projectPath": "C:\\UFSJ\\trabalho-pr-tico-maf\\MAF\\Ports\\Output\\MAF.Ports.Output.csproj"
+            "C:\\UFSJ\\MAF-Sonar\\MAF\\Ports\\Output\\MAF.Ports.Output.csproj": {
+              "projectPath": "C:\\UFSJ\\MAF-Sonar\\MAF\\Ports\\Output\\MAF.Ports.Output.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zVf2UeJRvAw=",
+  "dgSpecHash": "4OoOxtnc4fg=",
   "success": true,
-  "projectFilePath": "C:\\UFSJ\\trabalho-pr-tico-maf\\MAF\\Core\\Domain\\MAF.Core.Domain.csproj",
+  "projectFilePath": "C:\\UFSJ\\MAF-Sonar\\MAF\\Core\\Domain\\MAF.Core.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\UFSJ\\trabalho-pr-tico-maf\\MAF\\Core\\Domain\\MAF.Core.Domain.csproj",
+      "projectUniqueName": "C:\\UFSJ\\MAF-Sonar\\MAF\\Core\\Domain\\MAF.Core.Domain.csproj",
       "projectName": "MAF.Core.Domain",
-      "projectPath": "C:\\UFSJ\\trabalho-pr-tico-maf\\MAF\\Core\\Domain\\MAF.Core.Domain.csproj",
+      "projectPath": "C:\\UFSJ\\MAF-Sonar\\MAF\\Core\\Domain\\MAF.Core.Domain.csproj",
       "packagesPath": "C:\\Users\\minec\\.nuget\\packages\\",
-      "outputPath": "C:\\UFSJ\\trabalho-pr-tico-maf\\MAF\\Core\\Domain\\obj\\",
+      "outputPath": "C:\\UFSJ\\MAF-Sonar\\MAF\\Core\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\minec\\AppData\\Roaming\\NuGet\\NuGet.Config"
