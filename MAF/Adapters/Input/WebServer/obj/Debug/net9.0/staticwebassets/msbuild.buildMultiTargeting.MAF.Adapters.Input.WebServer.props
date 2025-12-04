@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/MAF.Adapters.Input.WebServer.props" />
+</Project>

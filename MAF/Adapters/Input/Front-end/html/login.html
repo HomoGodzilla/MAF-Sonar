@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login</title>
+
+	<style>
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			background-image: linear-gradient(45deg, yellow, green);
+			height: 100vh;
+			margin: 0;
+		}
+
+		div {
+			background-color: rgba(53, 52, 52, 0.9);
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			padding: 60px;
+			border-radius: 15px;
+			color: white;
+			width: 300px;
+			text-align: center;
+		}
+
+		.logo {
+			width: 120px;
+			margin-bottom: 20px;
+		}
+
+		h1 {
+			margin-bottom: 20px;
+		}
+
+		input {
+			width: 90%;
+			padding: 15px;
+			font-size: 15px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 10px;
+			outline: none;
+		}
+
+		button {
+			padding: 15px;
+			background-color: dodgerblue;
+			border: none;
+			width: 100%;
+			border-radius: 10px;
+			font-size: 15px;
+			color: white;
+			font-weight: bold;
+			margin-top: 10px;
+			transition: background-color 0.3s;
+			cursor: pointer;
+		}
+
+		button:hover {
+			background-color: deepskyblue;
+		}
+
+		.botao-cadastro {
+			display: inline-block;
+			text-decoration: none;
+			background-color: #28a745;
+			color: white;
+			padding: 15px;
+			border-radius: 10px;
+			font-size: 15px;
+			width: 90%;
+			text-align: center;
+			margin-top: 10px;
+			transition: background-color 0.3s;
+		}
+
+		.botao-cadastro:hover {
+			background-color: #34d058;
+		}
+	</style>
+</head>
+
+<body>
+	<div>
+		<img src="images/logo.png" alt="Logo" class="logo">
+
+		<form id="loginForm">
+			<h1>Login</h1>
+			<input type="text" id="usuario" placeholder="Usuário" required>
+			<input type="password" id="senha" placeholder="Senha" required>
+			<button type="submit">Entrar</button>
+			<a href="cadastro.html" class="botao-cadastro">Cadastre-se</a>
+		</form>
+	</div>
+
+	<script>
+		document.getElementById("loginForm").addEventListener("submit", function (e) {
+			e.preventDefault();
+
+			const usuario = document.getElementById("usuario").value;
+			const senha = document.getElementById("senha").value;
+
+			if (usuario === "admin" && senha === "123") {
+				window.location.href = "home.html";
+			} else {
+				alert("Usuário ou senha incorretos!");
+			}
+		});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args:
+  - 'build'
+  - '-t'
+  - 'us-central1-docker.pkg.dev/$PROJECT_ID/maf-repo/maf-api:latest' # O destino da imagem não muda
+  - '.'
+
+- name: 'gcr.io/cloud-builders/docker'
+  args:
+  - 'push'
+  - 'us-central1-docker.pkg.dev/$PROJECT_ID/maf-repo/maf-api:latest'
+
+- name: 'gcr.io/google/cloud-sdk'
+  entrypoint: 'gcloud' # O builder antigo precisa que isto seja explícito
+  args:
+  - 'run'
+  - 'deploy'
+  - 'maf-api-service' # Nome do seu serviço no Cloud Run
+  - '--image'
+  - 'us-central1-docker.pkg.dev/$PROJECT_ID/maf-repo/maf-api:latest'
+  - '--region'
+  - 'us-central1' 
+  - '--platform'
+  - 'managed'
+  - '--allow-unauthenticated'
+  - '--set-secrets=/etc/secrets/firebase-key.json=firebase-key:latest'
+  - '--port'
+  - '8080'
+
+images:
+- 'us-central1-docker.pkg.dev/$PROJECT_ID/maf-repo/maf-api:latest'

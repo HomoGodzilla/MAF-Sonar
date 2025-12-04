@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mapa de Árvores Frutíferas</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <br><br>
+  <h1>Mapa de Árvores Frutíferas</h1>
+
+  <button class="menu-toggle" onclick="toggleSidebar()">☰ Menu</button>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <br><br>
+    <a href="login.html">📝 Login</a>
+    <a href="#sobre">ℹ️ Sobre</a>
+  </div>
+
+  <!-- Mapa -->
+  <div id="map"></div>
+
+  <!-- Script do Google Maps -->
+  <script>
+    let map;
+
+    function initMap() {
+      map = new google.maps.Map(document.getElementById("map"), {
+        center: { lat: -21.1298, lng: -44.2319 },
+        zoom: 13,
+        mapTypeId: "roadmap",
+      });
+
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          (pos) => {
+            const userPos = {
+              lat: pos.coords.latitude,
+              lng: pos.coords.longitude,
+            };
+            map.setCenter(userPos);
+
+            new google.maps.Marker({
+              position: userPos,
+              map: map,
+              title: "Sua localização",
+              icon: {
+                path: google.maps.SymbolPath.CIRCLE,
+                scale: 8,
+                fillColor: '#4285F4',
+                fillOpacity: 1,
+                strokeWeight: 2,
+                strokeColor: 'white',
+              },
+            });
+          },
+          (err) => {
+            console.warn("Erro ao obter localização:", err.message);
+          },
+          { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }
+        );
+      }
+
+    }
+
+    function toggleSidebar() {
+      document.querySelector(".sidebar").classList.toggle("active");
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const addTreeBtn = document.getElementById("addTreeBtn");
+
+      addTreeBtn.addEventListener("click", () => {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(
+            (pos) => {
+              const treePos = {
+                lat: pos.coords.latitude,
+                lng: pos.coords.longitude,
+              };
+              new google.maps.Marker({
+                position: treePos,
+                map: map,
+                title: "Árvore Frutífera",
+                icon: "https://maps.google.com/mapfiles/ms/icons/green-dot.png",
+              });
+              alert("Árvore cadastrada na sua localização!");
+            },
+            (err) => {
+              alert("Não foi possível obter sua localização. Tente novamente.");
+              console.error(err);
+            },
+            { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }
+          );
+        } else {
+          alert("Geolocalização não é suportada pelo seu navegador.");
+        }
+      });
+    });
+  </script>
+
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyUFNfla-fRhxAJkq8htPn0ySFELYNb_Y&callback=initMap"></script>
+</body>
+
+</html>

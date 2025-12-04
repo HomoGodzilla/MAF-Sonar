@@ -1,0 +1,72 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "MAF.Core.Application/1.0.0": {
+        "dependencies": {
+          "MAF.Ports.Input": "1.0.0",
+          "MAF.Ports.Output": "1.0.0"
+        },
+        "runtime": {
+          "MAF.Core.Application.dll": {}
+        }
+      },
+      "MAF.Core.Domain/1.0.0": {
+        "runtime": {
+          "MAF.Core.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "MAF.Ports.Input/1.0.0": {
+        "dependencies": {
+          "MAF.Core.Domain": "1.0.0"
+        },
+        "runtime": {
+          "MAF.Ports.Input.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "MAF.Ports.Output/1.0.0": {
+        "dependencies": {
+          "MAF.Core.Domain": "1.0.0"
+        },
+        "runtime": {
+          "MAF.Ports.Output.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MAF.Core.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MAF.Core.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MAF.Ports.Input/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MAF.Ports.Output/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

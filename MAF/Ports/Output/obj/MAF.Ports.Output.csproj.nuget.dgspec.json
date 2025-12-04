@@ -1,0 +1,133 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\UFSJ\\trabalho-pr-tico-maf\\MAF\\Ports\\Output\\MAF.Ports.Output.csproj": {}
+  },
+  "projects": {
+    "C:\\UFSJ\\trabalho-pr-tico-maf\\MAF\\Core\\Domain\\MAF.Core.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\UFSJ\\trabalho-pr-tico-maf\\MAF\\Core\\Domain\\MAF.Core.Domain.csproj",
+        "projectName": "MAF.Core.Domain",
+        "projectPath": "C:\\UFSJ\\trabalho-pr-tico-maf\\MAF\\Core\\Domain\\MAF.Core.Domain.csproj",
+        "packagesPath": "C:\\Users\\minec\\.nuget\\packages\\",
+        "outputPath": "C:\\UFSJ\\trabalho-pr-tico-maf\\MAF\\Core\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\minec\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\UFSJ\\trabalho-pr-tico-maf\\MAF\\Ports\\Output\\MAF.Ports.Output.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\UFSJ\\trabalho-pr-tico-maf\\MAF\\Ports\\Output\\MAF.Ports.Output.csproj",
+        "projectName": "MAF.Ports.Output",
+        "projectPath": "C:\\UFSJ\\trabalho-pr-tico-maf\\MAF\\Ports\\Output\\MAF.Ports.Output.csproj",
+        "packagesPath": "C:\\Users\\minec\\.nuget\\packages\\",
+        "outputPath": "C:\\UFSJ\\trabalho-pr-tico-maf\\MAF\\Ports\\Output\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\minec\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\UFSJ\\trabalho-pr-tico-maf\\MAF\\Core\\Domain\\MAF.Core.Domain.csproj": {
+                "projectPath": "C:\\UFSJ\\trabalho-pr-tico-maf\\MAF\\Core\\Domain\\MAF.Core.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

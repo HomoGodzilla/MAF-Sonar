@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa de Árvores Frutíferas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <h1>Mapa de Árvores Frutíferas</h1>
+
+  <button id="toggleSidebar" class="menu-toggle" onclick="toggleSidebar()">☰ Menu</button>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <br><br>
+    <a href="#home" onclick="mostrarMapa()">🏠 Home</a>
+    <a href="#" onclick="mostrarTabelaArvores()">🌲 Árvores cadastradas</a>
+    <a href="#" onclick="mostrarModalAdicionar()">🌳 Adicionar Árvore</a>
+    <a href="#sobre">ℹ️ Sobre</a>
+    <a href="#" onclick="fazerLogout()" style="color: #e74c3c; margin-top: 20px; border-top: 1px solid #444; padding-top: 20px;">
+      ⏻ Sair
+    </a>
+  </div>
+
+  <div id="map"></div>
+
+  <div id="tabelaArvores" style="display:none;">
+    <div>
+      <h2>Árvores Cadastradas</h2>
+
+      <div class="pesquisa-container">
+        <span class="lupa">🔍</span>
+        <input type="text" id="pesquisaArvore" placeholder="Pesquisar espécie..." onkeyup="filtrarArvores()">
+      </div>
+
+      <br><br>
+
+      <label style="color:white; font-size:16px;">
+        Tipo:
+        <select id="filtroTipo" onchange="filtrarArvores()">
+          <option value="">Todos</option>
+          <option value="nativa">Nativa</option>
+          <option value="exotica">Exótica</option>
+        </select>
+      </label>
+
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Espécie</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+            <th>Tipo</th>
+            <th>Descrição</th>
+            <th>Imagem</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+
+        <tbody id="listaArvores">
+          <tr>
+            <td>1</td>
+            <td class="especie" onclick="mostrarMiniMapa(-21.13, -44.23, 'Mangueira')">Mangueira</td>
+            <td>-21.1300</td>
+            <td>-44.2300</td>
+            <td data-tipo="exotica">Exótica</td>
+            <td class="descricao-resumida" title="Árvore frutífera tropical, produz manga, muito comum no Brasil.">
+              Árvore frutífera tropical, produz...
+            </td>
+            <td>-</td>
+            <td>
+              <button onclick="editarArvore(1)">✏️ Editar</button>
+              <button onclick="excluirArvore(1)">🗑️ Excluir</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>2</td>
+            <td class="especie" onclick="mostrarMiniMapa(-21.129, -44.229, 'Goiabeira')">Goiabeira</td>
+            <td>-21.1290</td>
+            <td>-44.2290</td>
+            <td data-tipo="nativa">Nativa</td>
+            <td class="descricao-resumida" title="Árvore nativa da América Tropical, produz goiaba, rica em vitamina C.">
+              Árvore nativa da América Tropical...
+            </td>
+            <td>-</td>
+            <td>
+              <button onclick="editarArvore(2)">✏️ Editar</button>
+              <button onclick="excluirArvore(2)">🗑️ Excluir</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>3</td>
+            <td class="especie" onclick="mostrarMiniMapa(-21.129, -44.227, 'Laranjeira')">Laranjeira</td>
+            <td>-21.1290</td>
+            <td>-44.2270</td>
+            <td data-tipo="exotica">Exótica</td>
+            <td class="descricao-resumida" title="Árvore cítrica originária da Ásia, produz laranjas, fonte de vitamina C.">
+              Árvore cítrica originária da Ásia...
+            </td>
+            <td>-</td>
+            <td>
+              <button onclick="editarArvore(3)">✏️ Editar</button>
+              <button onclick="excluirArvore(3)">🗑️ Excluir</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="miniMapa"></div>
+  </div>
+
+  <div id="modalAdicionar" class="modal">
+    <div class="modal-content">
+      <span class="fechar" onclick="fecharModal()">&times;</span>
+      <h2>Cadastrar Nova Árvore</h2>
+      <form id="formArvore">
+        <input type="text" id="especie" placeholder="Espécie da árvore" required>
+        
+        <select id="tipo" required>
+          <option value="">Selecione o tipo</option>
+          <option value="nativa">Nativa</option>
+          <option value="exotica">Exótica</option>
+        </select>
+        
+        <textarea id="descricao" placeholder="Descrição da árvore (opcional)" rows="3"></textarea>
+        
+        <label for="imagem" style="color: #ecf0f1; text-align: left; display: block; margin: 10px 0 5px;">Imagem (opcional):</label>
+        <input type="file" id="imagem" accept="image/*">
+        
+        <div class="coordenadas">
+          <input type="number" id="latitude" placeholder="Latitude" step="any" required>
+          <input type="number" id="longitude" placeholder="Longitude" step="any" required>
+        </div>
+        
+        <div class="botoes-modal">
+          <button type="button" onclick="capturarLocalizacao()">📍 Usar Minha Localização</button>
+          <button type="button" onclick="selecionarNoMapa()">🗺️ Selecionar no Mapa</button>
+        </div>
+        
+        <div class="botoes">
+          <button type="submit">💾 Salvar Árvore</button>
+          <button type="button" onclick="fecharModal()">❌ Cancelar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyUFNfla-fRhxAJkq8htPn0ySFELYNb_Y&callback=initMap"></script>
+</body>
+
+</html>

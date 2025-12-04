@@ -1,0 +1,6 @@
+@MAF.Adapters.Input.WebServer_HostAddress = http://localhost:5190
+
+GET {{MAF.Adapters.Input.WebServer_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

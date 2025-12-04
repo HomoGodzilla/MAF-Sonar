@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "l6ETaIUhoNxN/xxY6lJ4MRq9GHlo90IegFaJX2doabk=",
+  "Source": "MAF.Adapters.Input.WebServer",
+  "BasePath": "_content/MAF.Adapters.Input.WebServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
